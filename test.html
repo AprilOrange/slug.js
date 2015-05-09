@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>slug.js</title>
+</head>
+<body>
+<p id="text">我爱你，不知道你是不是也爱我？ tell me please...</p>
+<hr>
+<p id="slug"></p>
+<script src="slug.js"></script>
+<script>
+  var text = document.getElementById('text').innerHTML;
+  var chars = slug(text);
+  document.getElementById('slug').innerHTML = chars;
+</script>
+</body>
+</html>
